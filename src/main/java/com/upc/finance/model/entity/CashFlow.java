@@ -29,19 +29,19 @@ public class CashFlow {
     private CorporateBond corporateBond;
 
     @Column(name = "periods_number")
-    private Integer periodsNumber;  //results
+    private Integer periodsNumber;
 
     @Column(name = "max_price")
     private Double maxPrice;
 
     @Column(name = "convexity")
-    private Double convexity;  //results
+    private Double convexity;
 
     @Column(name = "duration")
-    private Double duration;  //results
+    private Double duration;
 
     @Column(name = "modified_duration")
-    private Double modifiedDuration;  //results
+    private Double modifiedDuration;
 
     @Column(name = "tcea") // null si es investor
     private Double tcea;

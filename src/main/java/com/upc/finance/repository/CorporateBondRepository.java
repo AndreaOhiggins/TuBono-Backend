@@ -9,7 +9,6 @@ import java.util.List;
 @Repository
 public interface CorporateBondRepository extends JpaRepository<CorporateBond, Long> {
 
-//    List<CorporateBond> findByUserId(Long userId);
     List<CorporateBond> findAllByUserId(Long userId);
 
     List<CorporateBond> findAllByUserInvestor_Id(Long userInvestorId);

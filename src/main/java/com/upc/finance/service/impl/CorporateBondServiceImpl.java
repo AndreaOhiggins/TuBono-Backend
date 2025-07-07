@@ -50,9 +50,7 @@ public class CorporateBondServiceImpl implements CorporateBondService {
 
         var bond = modelMapper.map(corporateBondRequestDto, CorporateBond.class);
         bond.setUser(user);
-//        String issueDateString = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
         String issueDateString = LocalDate.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
-//        bond.setIssueDate(LocalDate.parse(issueDateString, DateTimeFormatter.ofPattern("yyyy-MM-dd")));
         bond.setIssueDate(LocalDate.parse(issueDateString, DateTimeFormatter.ofPattern("dd-MM-yyyy")));
         bond.setState(BondState.AVAILABLE);
 

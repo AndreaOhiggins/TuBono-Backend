@@ -42,9 +42,6 @@ public class CashFlowServiceImpl implements CashFlowService {
         investorCalculator = new InvestorCashFlowCalculator();
         issuerCalculator = new IssuerCashFlowCalculator();
 
-        // transform interest rate if it is NOMINAL and convert to effective
-        // transform interest rate frequency
-
         // copy bond to newBond to avoid modifying the original bond
         CorporateBond newBond = cloneBondWithoutSideEffects(bond);
 
@@ -114,7 +111,6 @@ public class CashFlowServiceImpl implements CashFlowService {
         List<Double> nominalValueList = new ArrayList<>(List.of());
         List<Double> balanceList = new ArrayList<>(List.of());
         List<Double> flowList = new ArrayList<>(List.of());
-
 
         // Añadir inversión -> compra del bono P0
         nominalValueList.add(0.0);

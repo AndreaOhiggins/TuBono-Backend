@@ -73,7 +73,7 @@ public class CorporateBond {
     @Column(name = "cok", nullable = false)
     private Double cok;
 
-    @Column(name = "cok_frequency", nullable = false) // days, frecuencia de la COK
+    @Column(name = "cok_frequency", nullable = false) // en días, frecuencia de la COK
     private Integer cokFrequency;
 
     @Enumerated(EnumType.STRING)
